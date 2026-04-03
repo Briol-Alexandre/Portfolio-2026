@@ -5,6 +5,7 @@
 @import './css/homepage.css';
 @import './css/cursor.css';
 @import './css/bg.css';
+@import './css/form.css';
 
 @tailwind base;
 @tailwind components;

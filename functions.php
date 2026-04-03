@@ -129,3 +129,17 @@ function dd($args)
     var_dump($args);
     die();
 }
+
+function scf_add_options_page()
+{
+    if (function_exists('acf_add_options_page')) {
+        acf_add_options_page(array(
+            'page_title' => 'Options du site',
+            'menu_title' => 'Options',
+            'menu_slug' => 'options-du-site',
+            'capability' => 'edit_posts',
+            'redirect' => false
+        ));
+    }
+}
+add_action('acf/init', 'scf_add_options_page');
