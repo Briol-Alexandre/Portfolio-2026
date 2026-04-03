@@ -12,10 +12,12 @@
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="profile" href="https://gmpg.org/xfn/11">
+    <script src="<?= get_template_directory_uri() . "/src/js/cursor.js" ?>" defer></script>
     <?php wp_head(); ?>
 </head>
 
 <body <?php body_class('bg-bg font-funnel text-primary'); ?>>
+    <div id="cursor" class="cursor"></div>
     <?php wp_body_open(); ?>
     <header class=" main-grid items-center fixed top-0 left-0 w-full bg-bg z-50 py-2 px-[100px]">
         <a href="<?= home_url(); ?>" title="Vers la page d'acceuil" class="col-span-1 w-10">

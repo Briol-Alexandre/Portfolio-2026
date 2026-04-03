@@ -1,0 +1,33 @@
+.cursor {
+    position: fixed;
+    width: 15px; 
+    height: 15px;
+    border-radius: 50%;
+    background-color: black;
+    transform: translate(-50%, -50%);
+    transition: width 0.3s, height 0.3s;
+    pointer-events: none;
+    z-index: 9999;    
+}
+
+.cursor.hover-cursor {
+    width: 25px;
+    height: 25px;
+    border: 2px solid #4C6A92;
+    background-color: transparent;
+    background-image: url('../img/arrow.svg');
+    background-size: cover;
+}
+
+.link-hover-cursor {
+    width: 25px;
+    height: 25px;
+    
+    background-color: magenta;
+    transition: width 0.5s height 0.5s;
+    z-index: 9999;
+}
+
+* {
+cursor: none;
+}

@@ -32,7 +32,7 @@ get_header();
 
     <section aria-labelledby="projects" class="mt-0">
         <h2 id="projects">Mes Projets</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
+        <div class="grid grid-project-cards grid-cols-1 md:grid-cols-3 gap-8 mt-8">
             <?php
             if ($query->have_posts()) {
                 while ($query->have_posts()) {

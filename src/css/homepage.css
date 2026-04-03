@@ -35,3 +35,9 @@
         @apply content-[''] w-full h-full border-2 border-primary absolute top-3 left-3 -z-40 rounded-lg transition-all duration-300 hover:top-0 hover:left-0;
     }
 }
+
+.grid-project-cards:has(.project-card:hover) .project-card:not(:hover) {
+    filter: blur(5px);
+    opacity: 0.6;
+    transition: filter 0.3s ease, opacity 0.3s ease;
+}

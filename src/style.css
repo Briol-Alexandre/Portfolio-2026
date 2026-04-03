@@ -3,6 +3,7 @@
 @import './css/nav.css';
 @import './css/boska.css';
 @import './css/homepage.css';
+@import './css/cursor.css';
 
 @tailwind base;
 @tailwind components;
