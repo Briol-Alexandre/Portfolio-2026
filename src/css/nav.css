@@ -1,0 +1,14 @@
+.nav {
+    ul {
+        @apply flex justify-between py-10;
+    } 
+    a {
+        @apply relative hover:font-bold transition-all duration-300;
+        &:before {
+            @apply content-[''] w-[2px] h-0 bg-secondary inline absolute bottom-0 -left-2 hover:h-full transition-all duration-300;
+        }
+        &:after {
+            @apply content-[''] w-[2px] h-0 bg-secondary inline absolute top-0 -right-2 hover:h-full transition-all duration-300;
+        }
+    }
+}
