@@ -4,6 +4,7 @@
 @import './css/boska.css';
 @import './css/homepage.css';
 @import './css/cursor.css';
+@import './css/bg.css';
 
 @tailwind base;
 @tailwind components;
