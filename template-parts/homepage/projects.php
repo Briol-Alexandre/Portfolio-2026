@@ -27,16 +27,21 @@ $query = new WP_Query([
                             <?= $title ?>
                         </h3>
                         <?php if ($taxonomies): ?>
-                            <ul class="flex">
-                                <?php foreach ($taxonomies as $taxonomy): ?>
+                            <ul class="flex flex-wrap">
+                                <?php foreach (array_slice($taxonomies, 0, 3) as $taxonomy): ?>
                                     <?php $icon = get_field('icone', $taxonomy); ?>
                                     <li class="bg-bg px-2 py-1 rounded-full text-sm mr-2 mb-2 flex w-fit items-center gap-2">
-                                        <img src="<?= $icon['url'] ?>" alt="" class="h-4">
+                                        <img src="<?= $icon[0]['url'] ?>" alt="" class="h-4">
                                         <p class="text-primary">
                                             <?= $taxonomy->name ?>
                                         </p>
                                     </li>
                                 <?php endforeach; ?>
+                                <?php if (count($taxonomies) > 3): ?>
+                                    <li class="bg-bg px-2 py-1 rounded-full text-sm mr-2 mb-2 flex w-fit items-center">
+                                        <p class="text-primary">…</p>
+                                    </li>
+                                <?php endif; ?>
                             </ul>
                         <?php endif; ?>
                         <p class="text-white line-clamp-4">

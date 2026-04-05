@@ -1444,12 +1444,20 @@ body{
   grid-column-start: 5;
 }
 
+.col-start-7{
+  grid-column-start: 7;
+}
+
 .col-start-8{
   grid-column-start: 8;
 }
 
 .col-end-11{
   grid-column-end: 11;
+}
+
+.col-end-12{
+  grid-column-end: 12;
 }
 
 .col-end-13{
@@ -1460,12 +1468,12 @@ body{
   grid-column-end: 5;
 }
 
-.col-end-7{
-  grid-column-end: 7;
+.col-end-6{
+  grid-column-end: 6;
 }
 
-.col-end-12{
-  grid-column-end: 12;
+.col-end-7{
+  grid-column-end: 7;
 }
 
 .m-0{
@@ -1519,8 +1527,20 @@ body{
   margin-right: 0.5rem;
 }
 
+.mr-4{
+  margin-right: 1rem;
+}
+
 .mt-0{
   margin-top: 0px;
+}
+
+.mt-10{
+  margin-top: 2.5rem;
+}
+
+.mt-14{
+  margin-top: 3.5rem;
 }
 
 .mt-36{
@@ -1549,10 +1569,6 @@ body{
 
 .mt-\[150px\]{
   margin-top: 150px;
-}
-
-.mt-10{
-  margin-top: 2.5rem;
 }
 
 .line-clamp-4{
@@ -1695,6 +1711,10 @@ body{
   flex-direction: column;
 }
 
+.flex-wrap{
+  flex-wrap: wrap;
+}
+
 .items-center{
   align-items: center;
 }
@@ -1717,6 +1737,10 @@ body{
 
 .justify-between{
   justify-content: space-between;
+}
+
+.gap-10{
+  gap: 2.5rem;
 }
 
 .gap-16{
@@ -1745,10 +1769,6 @@ body{
 
 .gap-8{
   gap: 2rem;
-}
-
-.gap-10{
-  gap: 2.5rem;
 }
 
 .overflow-hidden{
@@ -1842,6 +1862,10 @@ body{
   --tw-gradient-to: transparent var(--tw-gradient-to-position);
 }
 
+.fill-secondary{
+  fill: #4C6A92;
+}
+
 .fill-transparent{
   fill: transparent;
 }
@@ -1927,6 +1951,10 @@ body{
 
 .text-right{
   text-align: right;
+}
+
+.\!text-justify{
+  text-align: justify !important;
 }
 
 .text-justify{
@@ -2148,6 +2176,7 @@ main{
   background-color: rgb(236 239 242 / var(--tw-bg-opacity, 1));
   --tw-text-opacity: 1;
   color: rgb(30 42 56 / var(--tw-text-opacity, 1));
+  text-decoration-line: none;
 }
 
 .main-button {
@@ -2223,6 +2252,7 @@ main{
   background-color: rgb(76 106 146 / var(--tw-bg-opacity, 1));
   --tw-text-opacity: 1;
   color: rgb(236 239 242 / var(--tw-text-opacity, 1));
+  text-decoration-line: none;
 }
 
 section{
@@ -2255,6 +2285,20 @@ h1 {
     --tw-content: '';
     content: var(--tw-content);
   }
+}
+
+a{
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+a:hover{
+  text-decoration-line: underline;
+}
+
+nav a:hover{
+  text-decoration-line: none;
 }
 
 h2 {
@@ -2394,6 +2438,10 @@ h2 {
 .hover\:text-primary:hover{
   --tw-text-opacity: 1;
   color: rgb(30 42 56 / var(--tw-text-opacity, 1));
+}
+
+.hover\:underline:hover{
+  text-decoration-line: underline;
 }
 
 .group:hover .group-hover\:fill-bg{

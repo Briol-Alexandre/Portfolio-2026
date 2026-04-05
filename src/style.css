@@ -95,7 +95,7 @@ main {
 }
 
 .main-button {
-    @apply p-2 bg-primary border-2 border-primary text-bg rounded-lg relative hover:bg-bg hover:text-primary transition-all duration-300 -translate-x-2 -translate-y-2 hover:translate-x-0 hover:translate-y-0;
+    @apply p-2 bg-primary border-2 border-primary text-bg rounded-lg relative hover:bg-bg hover:text-primary transition-all duration-300 -translate-x-2 -translate-y-2 hover:translate-x-0 hover:translate-y-0 hover:no-underline;
     
     &:after {
         @apply content-[''] w-full h-full border-2 border-primary absolute top-2 left-2 -z-10 rounded-lg transition-all duration-300;
@@ -108,7 +108,7 @@ main {
 
 
 .secondary-button {
-    @apply p-2 border-2 border-secondary text-secondary rounded-lg relative hover:bg-secondary hover:text-bg transition-all duration-300;
+    @apply p-2 border-2 border-secondary text-secondary rounded-lg relative hover:bg-secondary hover:text-bg transition-all duration-300 hover:no-underline;
 }
 
 section{
@@ -120,6 +120,12 @@ h1 {
     &:after {
         @apply content-[''] w-2 h-2 bg-secondary inline-block ml-2 ;
     }
+}
+a {
+  @apply hover:underline transition-all duration-300;
+}
+nav a {
+  @apply hover:no-underline;
 }
 
 h2 {
