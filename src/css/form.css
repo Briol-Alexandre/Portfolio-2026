@@ -4,6 +4,13 @@
     form {
         @apply flex flex-col gap-6;
     }
+
+    .container_contact {
+        @apply flex gap-6;
+        > * {
+            @apply flex-1;
+        }
+    }
  }
 
 .wpcf7 input[type="text"],

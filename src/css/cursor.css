@@ -13,10 +13,10 @@
 .cursor.hover-cursor {
     width: 25px;
     height: 25px;
-    border: 2px solid #4C6A92;
-    background-color: transparent;
+    background-color: white;
     background-image: url('../img/arrow.svg');
     background-size: cover;
+    mix-blend-mode: difference;
 }
 
 .link-hover-cursor {

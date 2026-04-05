@@ -6,7 +6,7 @@ $query = new WP_Query([
 ?>
 <section aria-labelledby="projects" class="mt-0">
     <h2 id="projects">Mes Projets</h2>
-    <div class="grid grid-project-cards grid-cols-1 md:grid-cols-3 gap-8 mt-8">
+    <div class="grid grid-project-cards grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
         <?php
         if ($query->have_posts()) {
             while ($query->have_posts()) {
@@ -17,7 +17,7 @@ $query = new WP_Query([
                 $thumbnail = get_the_post_thumbnail_url(get_the_ID(), 'medium');
                 $taxonomies = get_the_terms(get_the_ID(), 'project_technology');
                 ?>
-                <article class="rounded group cursor-pointer project-card">
+                <article class="rounded group cursor-pointer project-card last:col-span-full last:max-w-sm last:mx-auto">
                     <img src="<?= $thumbnail ?>" alt="<?= $title ?>"
                         class="absolute w-full h-full -z-20 object-cover rounded-lg overflow-hidden">
                     <a href="<?= $permalink ?>" class="absolute inset-0 z-10"></a>

@@ -1,0 +1,16 @@
+.title-changer {
+    height: 80px;
+    overflow: hidden;
+    ul {
+        @apply list-none m-0 p-0;
+        animation: changeTitle 10s linear infinite;
+    }
+}
+
+@keyframes changeTitle {
+  0%       { transform: translateY(0);     }
+  5%       { transform: translateY(-70px); } 
+  16.6667% { transform: translateY(-70px); }  
+  21.6667% { transform: translateY(-140px);}
+  33.3333% { transform: translateY(-140px);}
+}
