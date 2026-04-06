@@ -1,7 +1,7 @@
 .nav {
     ul {
         @apply flex justify-between py-10;
-    } 
+    }
     a {
         @apply relative hover:font-bold transition-all duration-300;
         &:before {
@@ -10,5 +10,43 @@
         &:after {
             @apply content-[''] w-[2px] h-0 bg-secondary inline absolute top-0 -right-2 hover:h-full transition-all duration-300;
         }
+    }
+}
+
+.burger {
+    @apply flex flex-col justify-center items-center gap-[6px] w-10 h-10 cursor-pointer md:hidden z-[9999] relative;
+    span {
+        @apply block w-6 h-[2px] bg-primary transition-all duration-300;
+    }
+    &.is-open {
+        span:nth-child(1) {
+            @apply rotate-45 translate-y-[8px];
+        }
+        span:nth-child(2) {
+            @apply opacity-0 scale-x-0;
+        }
+        span:nth-child(3) {
+            @apply -rotate-45 -translate-y-[8px];
+        }
+    }
+}
+
+.mobile-menu {
+    @apply fixed inset-0 bg-bg z-40 flex flex-col items-center justify-center
+           translate-x-full transition-transform duration-500 ease-in-out md:hidden;
+    ul {
+        @apply flex flex-col items-center gap-10;
+    }
+    a {
+        @apply text-xl font-funnel relative hover:font-bold transition-all duration-300;
+        &:before {
+            @apply content-[''] w-[2px] h-0 bg-secondary inline absolute bottom-0 -left-4 hover:h-full transition-all duration-300;
+        }
+        &:after {
+            @apply content-[''] w-[2px] h-0 bg-secondary inline absolute top-0 -right-4 hover:h-full transition-all duration-300;
+        }
+    }
+    &.is-open {
+        @apply translate-x-0;
     }
 }

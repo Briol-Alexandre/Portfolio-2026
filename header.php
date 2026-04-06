@@ -14,6 +14,7 @@
     <link rel="profile" href="https://gmpg.org/xfn/11">
     <script src="<?= get_template_directory_uri() . "/src/js/bg.js" ?>" defer></script>
     <script src="<?= get_template_directory_uri() . "/src/js/cursor.js" ?>" defer></script>
+    <script src="<?= get_template_directory_uri() . "/src/js/nav.js" ?>" defer></script>
     <?php wp_head(); ?>
     <style>
         @font-face {
@@ -26,14 +27,15 @@
 </head>
 
 <body <?php body_class('bg-bg font-funnel text-primary'); ?>>
-    <div id="cursor" class="cursor"></div>
+    <div id="cursor" class="cursor max-md:hidden"></div>
     <canvas id="bg-dots"></canvas>
     <?php wp_body_open(); ?>
-    <header class=" main-grid items-center fixed top-0 left-0 w-full bg-bg z-50 py-2 xl:px-[100px] px-[50px]">
+    <header class="main-grid items-center fixed top-0 left-0 w-full bg-bg z-50 py-5 md:py-2 xl:px-[100px] px-[50px]">
         <a href="<?= home_url(); ?>" title="Vers la page d'acceuil" class="col-span-1 w-10">
             <img src="<?= get_template_directory_uri() . "/src/img/logo.svg" ?>" alt="Logo">
         </a>
-        <nav class="nav col-start-3 col-end-11 lg:col-start-4 lg:col-end-10">
+
+        <nav class="nav col-start-3 col-end-11 lg:col-start-4 lg:col-end-10 max-md:hidden">
             <?php
             wp_nav_menu(array(
                 'theme_location' => 'primary',
@@ -42,7 +44,26 @@
             ));
             ?>
         </nav>
-        <?php get_template_part('template-parts/socials/socials'); ?>
+
+        <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+            <?php
+            wp_nav_menu(array(
+                'theme_location' => 'primary',
+                'container' => false,
+                'menu_class' => '',
+            ));
+            ?>
+        </div>
+
+        <?php get_template_part('template-parts/socials/socials', '', ['mobile' => true]); ?>
+
+        <button class="burger md:hidden col-start-11" id="burger" aria-label="Ouvrir le menu" aria-expanded="false"
+            aria-controls="mobile-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
         <div class="fixed top-2 left-2 z-[9999] px-2 py-1 text-white text-sm font-bold rounded bg-black/70">
             <span class="block sm:hidden">XS ( < 640px )</span>
                     <span class="hidden sm:block md:hidden">SM ( ≥ 640px )</span>

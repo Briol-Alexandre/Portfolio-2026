@@ -1,9 +1,10 @@
 <?php
 $light = $args['light'] ?? false;
 $ul_classes = $args['ul_classes'] ?? 'col-start-11 col-end-13 flex justify-end gap-4';
+$mobile = $args['mobile'] ?? false;
 ?>
 
-<ul class="socials <?= $ul_classes ?>">
+<ul class="socials <?= $ul_classes ?> <?= $mobile ? 'max-md:hidden' : '' ?>">
     <li class="w-5">
         <a href="" class="group">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 30 30"
