@@ -33,7 +33,7 @@ $gallery = get_field('gallery');
         <?php endif; ?>
         <div class="flex">
             <?php if ($website_link): ?>
-                <a href="<?= $website_link ?>" target="_blank" class="main-button mr-4">Voir le site</a>
+                <a href="<?= $website_link['url'] ?>" target="_blank" class="main-button mr-4">Voir le site</a>
             <?php endif; ?>
             <?php if ($github_link): ?>
                 <a href="<?= $github_link['url'] ?>" target="_blank" class="secondary-button group flex gap-2 items-center">

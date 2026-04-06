@@ -15,6 +15,14 @@
     <script src="<?= get_template_directory_uri() . "/src/js/bg.js" ?>" defer></script>
     <script src="<?= get_template_directory_uri() . "/src/js/cursor.js" ?>" defer></script>
     <?php wp_head(); ?>
+    <style>
+        @font-face {
+            font-family: 'Boska';
+            src: url(<?= get_template_directory_uri() . "/src/fonts/Boska-VariableItalic.woff2" ?>) format('woff2'),
+                url(<?= get_template_directory_uri() . "/src/fonts/Boska-VariableItalic.woff" ?>) format('woff'),
+                url(<?= get_template_directory_uri() . "/src/fonts/Boska-VariableItalic.ttf" ?>) format('truetype');
+        }
+    </style>
 </head>
 
 <body <?php body_class('bg-bg font-funnel text-primary'); ?>>

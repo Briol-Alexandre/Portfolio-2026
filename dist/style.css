@@ -1,245 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
-/**
-* @license
-*
-* Font Family: Boska
-* Designed by: Barbara Bigosinska
-* URL: https://www.fontshare.com/fonts/boska
-* © 2026 Indian Type Foundry
-*
-* Boska Extralight 
-* Boska ExtralightItalic 
-* Boska Light 
-* Boska LightItalic 
-* Boska Regular 
-* Boska Italic 
-* Boska Medium 
-* Boska MediumItalic 
-* Boska Bold 
-* Boska BoldItalic 
-* Boska Black 
-* Boska BlackItalic 
-* Boska Variable (Variable font)
-* Boska VariableItalic (Variable font)
-
-*
-*/
-
-@font-face {
-  font-family: 'Boska-Extralight';
-
-  src: url('../fonts/Boska-Extralight.woff2') format('woff2'),
-       url('../fonts/Boska-Extralight.woff') format('woff'),
-       url('../fonts/Boska-Extralight.ttf') format('truetype');
-
-  font-weight: 200;
-
-  font-display: swap;
-
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Boska-ExtralightItalic';
-
-  src: url('../fonts/Boska-ExtralightItalic.woff2') format('woff2'),
-       url('../fonts/Boska-ExtralightItalic.woff') format('woff'),
-       url('../fonts/Boska-ExtralightItalic.ttf') format('truetype');
-
-  font-weight: 200;
-
-  font-display: swap;
-
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'Boska-Light';
-
-  src: url('../fonts/Boska-Light.woff2') format('woff2'),
-       url('../fonts/Boska-Light.woff') format('woff'),
-       url('../fonts/Boska-Light.ttf') format('truetype');
-
-  font-weight: 300;
-
-  font-display: swap;
-
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Boska-LightItalic';
-
-  src: url('../fonts/Boska-LightItalic.woff2') format('woff2'),
-       url('../fonts/Boska-LightItalic.woff') format('woff'),
-       url('../fonts/Boska-LightItalic.ttf') format('truetype');
-
-  font-weight: 300;
-
-  font-display: swap;
-
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'Boska-Regular';
-
-  src: url('../fonts/Boska-Regular.woff2') format('woff2'),
-       url('../fonts/Boska-Regular.woff') format('woff'),
-       url('../fonts/Boska-Regular.ttf') format('truetype');
-
-  font-weight: 400;
-
-  font-display: swap;
-
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Boska-Italic';
-
-  src: url('../fonts/Boska-Italic.woff2') format('woff2'),
-       url('../fonts/Boska-Italic.woff') format('woff'),
-       url('../fonts/Boska-Italic.ttf') format('truetype');
-
-  font-weight: 400;
-
-  font-display: swap;
-
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'Boska-Medium';
-
-  src: url('../fonts/Boska-Medium.woff2') format('woff2'),
-       url('../fonts/Boska-Medium.woff') format('woff'),
-       url('../fonts/Boska-Medium.ttf') format('truetype');
-
-  font-weight: 500;
-
-  font-display: swap;
-
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Boska-MediumItalic';
-
-  src: url('../fonts/Boska-MediumItalic.woff2') format('woff2'),
-       url('../fonts/Boska-MediumItalic.woff') format('woff'),
-       url('../fonts/Boska-MediumItalic.ttf') format('truetype');
-
-  font-weight: 500;
-
-  font-display: swap;
-
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'Boska-Bold';
-
-  src: url('../fonts/Boska-Bold.woff2') format('woff2'),
-       url('../fonts/Boska-Bold.woff') format('woff'),
-       url('../fonts/Boska-Bold.ttf') format('truetype');
-
-  font-weight: 700;
-
-  font-display: swap;
-
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Boska-BoldItalic';
-
-  src: url('../fonts/Boska-BoldItalic.woff2') format('woff2'),
-       url('../fonts/Boska-BoldItalic.woff') format('woff'),
-       url('../fonts/Boska-BoldItalic.ttf') format('truetype');
-
-  font-weight: 700;
-
-  font-display: swap;
-
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'Boska-Black';
-
-  src: url('../fonts/Boska-Black.woff2') format('woff2'),
-       url('../fonts/Boska-Black.woff') format('woff'),
-       url('../fonts/Boska-Black.ttf') format('truetype');
-
-  font-weight: 900;
-
-  font-display: swap;
-
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Boska-BlackItalic';
-
-  src: url('../fonts/Boska-BlackItalic.woff2') format('woff2'),
-       url('../fonts/Boska-BlackItalic.woff') format('woff'),
-       url('../fonts/Boska-BlackItalic.ttf') format('truetype');
-
-  font-weight: 900;
-
-  font-display: swap;
-
-  font-style: italic;
-}
-
-/**
-* This is a variable font
-* You can control variable axes as shown below:
-* font-variation-settings: wght 200.0;
-*
-* available axes:
-'wght' (range from 200.0 to 900.0
-*/
-
-@font-face {
-  font-family: 'Boska-Variable';
-
-  src: url('../fonts/Boska-Variable.woff2') format('woff2'),
-       url('../fonts/Boska-Variable.woff') format('woff'),
-       url('../fonts/Boska-Variable.ttf') format('truetype');
-
-  font-weight: 200 900;
-
-  font-display: swap;
-
-  font-style: normal;
-}
-
-/**
-* This is a variable font
-* You can control variable axes as shown below:
-* font-variation-settings: wght 200.0;
-*
-* available axes:
-'wght' (range from 200.0 to 900.0
-*/
-
-@font-face {
-  font-family: 'Boska-VariableItalic';
-
-  src: url('../fonts/Boska-VariableItalic.woff2') format('woff2'),
-       url('../fonts/Boska-VariableItalic.woff') format('woff'),
-       url('../fonts/Boska-VariableItalic.ttf') format('truetype');
-
-  font-weight: 200 900;
-
-  font-display: swap;
-
-  font-style: italic;
-}
-
 .animated-cts{
   margin-top: 2rem;
   display: flex;
@@ -740,8 +500,7 @@
   --tw-contain-style:  ;
 }
 
-/*! tailwindcss v3.4.19 | MIT License | https://tailwindcss.com
-*/
+/* ! tailwindcss v3.4.19 | MIT License | https://tailwindcss.com */
 
 /*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
@@ -1244,7 +1003,7 @@ body{
 }
 
 .font-boska {
-  font-family: 'Boska-Regular', system-ui, sans-serif;
+  font-family: 'Boska', system-ui, sans-serif;
 }
 
 .site-title{
@@ -1328,10 +1087,6 @@ body{
   pointer-events: none;
 }
 
-.invisible{
-  visibility: hidden;
-}
-
 .fixed{
   position: fixed;
 }
@@ -1388,36 +1143,16 @@ body{
   top: 0px;
 }
 
+.top-1\/2{
+  top: 50%;
+}
+
 .top-2{
   top: 0.5rem;
 }
 
 .top-3{
   top: 0.75rem;
-}
-
-.left-1\/2{
-  left: 50%;
-}
-
-.top-10{
-  top: 2.5rem;
-}
-
-.left-4{
-  left: 1rem;
-}
-
-.left-\[13px\]{
-  left: 13px;
-}
-
-.top-1\.5{
-  top: 0.375rem;
-}
-
-.top-1\/2{
-  top: 50%;
 }
 
 .-z-10{
@@ -1504,28 +1239,8 @@ body{
   grid-column-end: 7;
 }
 
-.row-start-2{
-  grid-row-start: 2;
-}
-
-.row-start-1{
-  grid-row-start: 1;
-}
-
-.row-start-3{
-  grid-row-start: 3;
-}
-
-.row-start-4{
-  grid-row-start: 4;
-}
-
 .m-0{
   margin: 0px;
-}
-
-.m-2{
-  margin: 0.5rem;
 }
 
 .mx-\[50px\]{
@@ -1583,6 +1298,10 @@ body{
   margin-top: 0px;
 }
 
+.mt-1{
+  margin-top: 0.25rem;
+}
+
 .mt-10{
   margin-top: 2.5rem;
 }
@@ -1617,26 +1336,6 @@ body{
 
 .mt-\[150px\]{
   margin-top: 150px;
-}
-
-.mt-12{
-  margin-top: 3rem;
-}
-
-.mb-1{
-  margin-bottom: 0.25rem;
-}
-
-.mb-16{
-  margin-bottom: 4rem;
-}
-
-.mt-2{
-  margin-top: 0.5rem;
-}
-
-.mt-1{
-  margin-top: 0.25rem;
 }
 
 .line-clamp-4{
@@ -1674,8 +1373,16 @@ body{
   height: 0px;
 }
 
+.h-1{
+  height: 0.25rem;
+}
+
 .h-2{
   height: 0.5rem;
+}
+
+.h-3{
+  height: 0.75rem;
 }
 
 .h-4{
@@ -1698,22 +1405,6 @@ body{
   height: 100vh;
 }
 
-.h-3\.5{
-  height: 0.875rem;
-}
-
-.h-3{
-  height: 0.75rem;
-}
-
-.h-1{
-  height: 0.25rem;
-}
-
-.min-h-\[100px\]{
-  min-height: 100px;
-}
-
 .w-1\/3{
   width: 33.333333%;
 }
@@ -1724,6 +1415,10 @@ body{
 
 .w-2{
   width: 0.5rem;
+}
+
+.w-3{
+  width: 0.75rem;
 }
 
 .w-5{
@@ -1743,42 +1438,6 @@ body{
   width: 100%;
 }
 
-.w-3\.5{
-  width: 0.875rem;
-}
-
-.w-px{
-  width: 1px;
-}
-
-.w-3{
-  width: 0.75rem;
-}
-
-.w-4{
-  width: 1rem;
-}
-
-.max-w-3xl{
-  max-width: 48rem;
-}
-
-.max-w-xs{
-  max-width: 20rem;
-}
-
-.max-w-xl{
-  max-width: 36rem;
-}
-
-.flex-1{
-  flex: 1 1 0%;
-}
-
-.flex-shrink-0{
-  flex-shrink: 0;
-}
-
 .-translate-x-2{
   --tw-translate-x: -0.5rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -1789,6 +1448,11 @@ body{
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.-translate-y-1\/2{
+  --tw-translate-y: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .-translate-y-2{
   --tw-translate-y: -0.5rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -1796,16 +1460,6 @@ body{
 
 .-translate-y-3{
   --tw-translate-y: -0.75rem;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.-translate-x-1\/2{
-  --tw-translate-x: -50%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.-translate-y-1\/2{
-  --tw-translate-y: -50%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -1840,10 +1494,6 @@ body{
 
 .grid-cols-2{
   grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.grid-cols-\[1fr_48px_1fr\]{
-  grid-template-columns: 1fr 48px 1fr;
 }
 
 .flex-col{
@@ -1910,34 +1560,6 @@ body{
   gap: 2rem;
 }
 
-.gap-20{
-  gap: 5rem;
-}
-
-.gap-12{
-  gap: 3rem;
-}
-
-.divide-x-2 > :not([hidden]) ~ :not([hidden]){
-  --tw-divide-x-reverse: 0;
-  border-right-width: calc(2px * var(--tw-divide-x-reverse));
-  border-left-width: calc(2px * calc(1 - var(--tw-divide-x-reverse)));
-}
-
-.divide-y-2 > :not([hidden]) ~ :not([hidden]){
-  --tw-divide-y-reverse: 0;
-  border-top-width: calc(2px * calc(1 - var(--tw-divide-y-reverse)));
-  border-bottom-width: calc(2px * var(--tw-divide-y-reverse));
-}
-
-.divide-primary\/40 > :not([hidden]) ~ :not([hidden]){
-  border-color: rgb(30 42 56 / 0.4);
-}
-
-.self-stretch{
-  align-self: stretch;
-}
-
 .overflow-hidden{
   overflow: hidden;
 }
@@ -1967,22 +1589,6 @@ body{
   border-width: 2px;
 }
 
-.border{
-  border-width: 1px;
-}
-
-.border-t{
-  border-top-width: 1px;
-}
-
-.border-b{
-  border-bottom-width: 1px;
-}
-
-.border-b-4{
-  border-bottom-width: 4px;
-}
-
 .border-b-2{
   border-bottom-width: 2px;
 }
@@ -1995,26 +1601,6 @@ body{
 .border-secondary{
   --tw-border-opacity: 1;
   border-color: rgb(76 106 146 / var(--tw-border-opacity, 1));
-}
-
-.border-gray-100{
-  --tw-border-opacity: 1;
-  border-color: rgb(243 244 246 / var(--tw-border-opacity, 1));
-}
-
-.border-white{
-  --tw-border-opacity: 1;
-  border-color: rgb(255 255 255 / var(--tw-border-opacity, 1));
-}
-
-.border-bg{
-  --tw-border-opacity: 1;
-  border-color: rgb(236 239 242 / var(--tw-border-opacity, 1));
-}
-
-.border-b-primary{
-  --tw-border-opacity: 1;
-  border-bottom-color: rgb(30 42 56 / var(--tw-border-opacity, 1));
 }
 
 .border-b-primary\/20{
@@ -2064,33 +1650,6 @@ body{
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
 }
 
-.bg-gray-200{
-  --tw-bg-opacity: 1;
-  background-color: rgb(229 231 235 / var(--tw-bg-opacity, 1));
-}
-
-.bg-violet-50{
-  --tw-bg-opacity: 1;
-  background-color: rgb(245 243 255 / var(--tw-bg-opacity, 1));
-}
-
-.bg-violet-500{
-  --tw-bg-opacity: 1;
-  background-color: rgb(139 92 246 / var(--tw-bg-opacity, 1));
-}
-
-.bg-secondary\/30{
-  background-color: rgb(76 106 146 / 0.3);
-}
-
-.bg-primary\/20{
-  background-color: rgb(30 42 56 / 0.2);
-}
-
-.bg-primary\/10{
-  background-color: rgb(30 42 56 / 0.1);
-}
-
 .bg-gradient-to-t{
   background-image: linear-gradient(to top, var(--tw-gradient-stops));
 }
@@ -2105,16 +1664,16 @@ body{
   --tw-gradient-to: transparent var(--tw-gradient-to-position);
 }
 
+.fill-bg{
+  fill: #ECEFF2;
+}
+
 .fill-secondary{
   fill: #4C6A92;
 }
 
 .fill-transparent{
   fill: transparent;
-}
-
-.fill-bg{
-  fill: #ECEFF2;
 }
 
 .stroke-bg{
@@ -2138,13 +1697,14 @@ body{
   padding: 1rem;
 }
 
-.p-5{
-  padding: 1.25rem;
-}
-
 .\!py-0{
   padding-top: 0px !important;
   padding-bottom: 0px !important;
+}
+
+.px-10{
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
 }
 
 .px-2{
@@ -2192,57 +1752,8 @@ body{
   padding-bottom: 2rem;
 }
 
-.px-2\.5{
-  padding-left: 0.625rem;
-  padding-right: 0.625rem;
-}
-
-.py-0\.5{
-  padding-top: 0.125rem;
-  padding-bottom: 0.125rem;
-}
-
-.py-20{
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-}
-
-.px-10{
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-}
-
-.px-8{
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-
 .pt-4{
   padding-top: 1rem;
-}
-
-.pl-6{
-  padding-left: 1.5rem;
-}
-
-.pr-6{
-  padding-right: 1.5rem;
-}
-
-.pt-2{
-  padding-top: 0.5rem;
-}
-
-.pb-10{
-  padding-bottom: 2.5rem;
-}
-
-.pl-12{
-  padding-left: 3rem;
-}
-
-.pb-8{
-  padding-bottom: 2rem;
 }
 
 .text-center{
@@ -2296,20 +1807,6 @@ body{
   line-height: 1.75rem;
 }
 
-.text-\[11px\]{
-  font-size: 11px;
-}
-
-.text-xs{
-  font-size: 0.75rem;
-  line-height: 1rem;
-}
-
-.text-lg{
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-}
-
 .font-bold{
   font-weight: 700;
 }
@@ -2318,36 +1815,8 @@ body{
   font-weight: 600;
 }
 
-.font-medium{
-  font-weight: 500;
-}
-
-.font-normal{
-  font-weight: 400;
-}
-
-.uppercase{
-  text-transform: uppercase;
-}
-
 .italic{
   font-style: italic;
-}
-
-.leading-relaxed{
-  line-height: 1.625;
-}
-
-.leading-snug{
-  line-height: 1.375;
-}
-
-.tracking-tight{
-  letter-spacing: -0.025em;
-}
-
-.tracking-widest{
-  letter-spacing: 0.1em;
 }
 
 .text-bg{
@@ -2375,6 +1844,10 @@ body{
   color: rgb(30 42 56 / var(--tw-text-opacity, 1));
 }
 
+.text-primary\/40{
+  color: rgb(30 42 56 / 0.4);
+}
+
 .text-secondary{
   --tw-text-opacity: 1;
   color: rgb(76 106 146 / var(--tw-text-opacity, 1));
@@ -2383,33 +1856,6 @@ body{
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
-}
-
-.text-gray-400{
-  --tw-text-opacity: 1;
-  color: rgb(156 163 175 / var(--tw-text-opacity, 1));
-}
-
-.text-violet-700{
-  --tw-text-opacity: 1;
-  color: rgb(109 40 217 / var(--tw-text-opacity, 1));
-}
-
-.text-gray-500{
-  --tw-text-opacity: 1;
-  color: rgb(107 114 128 / var(--tw-text-opacity, 1));
-}
-
-.text-primary\/40{
-  color: rgb(30 42 56 / 0.4);
-}
-
-.text-primary\/60{
-  color: rgb(30 42 56 / 0.6);
-}
-
-.text-secondary\/60{
-  color: rgb(76 106 146 / 0.6);
 }
 
 .underline{
@@ -2437,12 +1883,6 @@ body{
 
 .transition-all{
   transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
-.transition-colors{
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
@@ -2719,6 +2159,11 @@ h2 {
   top: -0.5rem;
 }
 
+.after\:hidden::after{
+  content: var(--tw-content);
+  display: none;
+}
+
 .after\:h-full::after{
   content: var(--tw-content);
   height: 100%;
@@ -2780,11 +2225,6 @@ h2 {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.hover\:border-gray-300:hover{
-  --tw-border-opacity: 1;
-  border-color: rgb(209 213 219 / var(--tw-border-opacity, 1));
-}
-
 .hover\:bg-bg:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(236 239 242 / var(--tw-bg-opacity, 1));
@@ -2826,14 +2266,6 @@ h2 {
 
 .hover\:underline:hover{
   text-decoration-line: underline;
-}
-
-.group:nth-child(odd) .group-odd\:text-right{
-  text-align: right;
-}
-
-.group:nth-child(even) .group-even\:col-start-2{
-  grid-column-start: 2;
 }
 
 .group:hover .group-hover\:fill-bg{

@@ -1,5 +1,5 @@
 <div class="flex flex-col items-center gap-16 h-screen justify-center relative">
-    <h1 class="text-center font-funnel-display text-4xl md:text-6xl xl:text-8xl font-bold my-1">
+    <h1 class="text-center font-funnel-display text-4xl md:text-6xl xl:text-8xl font-bold my-1 after:hidden">
         Je suis Alexandre Briol
         <span class="font-boska italic block text-secondary pt-4">
             Web Developper
