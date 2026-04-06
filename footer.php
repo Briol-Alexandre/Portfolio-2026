@@ -14,7 +14,7 @@
             class="mx-auto mb-4 max-md:px-10">
         <div class="flex flex-col gap-4">
             <nav class="nav" aria-labelledby="footer-nav">
-                <h2 class="sr-only">Navigation footer</h2>
+                <h2 id="footer-nav" class="sr-only">Navigation footer</h2>
                 <?php
                 wp_nav_menu(array(
                     'theme_location' => 'primary',
@@ -32,8 +32,8 @@
         <div class="flex max-md:flex-col justify-between items-center w-full px-6">
             <div class="w-1/3 max-lg:hidden"></div>
             <div class="flex gap-4 lg:w-1/3 justify-center max-lg:text-sm">
-                <a href="">Mentions légales</a>
-                <a href="">RGPD</a>
+                <a href="<?= get_permalink(get_page_by_path('mentions-legales')) ?>">Mentions légales</a>
+                <a href="<?= get_permalink(get_page_by_path('rgpd')) ?>">RGPD</a>
             </div>
             <p class="lg:w-1/3 text-right lg:text-sm text-xs">&copy;
                 <?= date('Y'); ?> Alexandre Briol. Tous droits réservés.

@@ -24,9 +24,9 @@ get_header();
                     <a href="<?= $permalink ?>" class="absolute inset-0 z-10"></a>
                     <div class="absolute inset-0 bg-gradient-to-t from-primary to-transparent -z-10 rounded-lg"></div>
                     <div class="p-4 flex flex-col h-full justify-end">
-                        <h3 class="mt-52 text-2xl font-bold text-white font-funnel-display mb-4">
+                        <h2 class="mt-52 text-2xl font-bold text-white font-funnel-display mb-4">
                             <?= $title ?>
-                        </h3>
+                        </h2>
                         <?php if ($taxonomies): ?>
                             <ul class="flex flex-wrap">
                                 <?php foreach (array_slice($taxonomies, 0, 3) as $taxonomy): ?>

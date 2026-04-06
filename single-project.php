@@ -11,7 +11,7 @@ $project_description = get_field('project_desc');
 $gallery = get_field('gallery');
 ?>
 <main class="mt-36 main-grid">
-    <div class="col-start-1 md:col-end-6 col-span-full max-md:row-start-2 flex flex-col gap-8">
+    <div class="col-start-1 md:col-end-6 col-span-full max-md:row-start-2 flex flex-col justify-center gap-8">
         <h1 class="font-funnel-display mb-0 text-left">
             <?= $title; ?>
         </h1>

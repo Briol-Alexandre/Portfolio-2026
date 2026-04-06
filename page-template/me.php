@@ -32,7 +32,7 @@ $skills = new WP_Query([
                 des expériences utilisateur exceptionnelles. Mon objectif est de transformer les idées en réalité
                 numérique,
                 en utilisant les dernières technologies pour offrir des solutions innovantes et efficaces.</p>
-            <a href="<?= $github_link ?>" target="_blank" rel="noopener noreferrer"
+            <a href="<?= $github_link['url'] ?>" target="_blank" rel="noopener noreferrer"
                 class="main-button w-fit group flex gap-2 items-center max-md:ml-auto">
                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24">
                     <path class="fill-bg group-hover:fill-primary transition-all duration-300"
@@ -41,7 +41,8 @@ $skills = new WP_Query([
                 Voir mon GitHub
             </a>
         </div>
-        <img src="<?php echo $image; ?>" alt="Alexandre Briol" class="md:col-start-7 col-span-full max-md:row-start-2">
+        <img src="<?= $image['url']; ?>" alt="Alexandre Briol"
+            class="md:col-start-7 col-span-full max-md:row-start-2 w-full">
     </section>
     <section aria-labelledby="parcours">
         <h2 id="parcours">
@@ -77,8 +78,8 @@ $skills = new WP_Query([
             ?>
         </ul>
     </section>
-    <section aria-labelledby="parcours">
-        <h2 id="parcours">
+    <section aria-labelledby="parcours-pro">
+        <h2 id="parcours-pro">
             Mon parcours professionnel
         </h2>
         <ul class="flex flex-col">
