@@ -11,7 +11,7 @@ $project_description = get_field('project_desc');
 $gallery = get_field('gallery');
 ?>
 <main class="mt-36 main-grid">
-    <div class="col-start-1 col-end-6 flex flex-col gap-8">
+    <div class="col-start-1 md:col-end-6 col-span-full max-md:row-start-2 flex flex-col gap-8">
         <h1 class="font-funnel-display mb-0">
             <?= $title; ?>
         </h1>
@@ -19,7 +19,7 @@ $gallery = get_field('gallery');
             <?= $content; ?>
         </p>
         <?php if ($taxonomies): ?>
-            <ul class="flex gap-2">
+            <ul class="flex flex-wrap gap-2">
                 <?php foreach ($taxonomies as $taxonomy): ?>
                     <?php $icon = get_field('icone', $taxonomy); ?>
                     <li class="bg-primary px-2 py-1 rounded-full text-sm mr-2 mb-2 flex w-fit items-center gap-2">
@@ -46,13 +46,13 @@ $gallery = get_field('gallery');
             <?php endif; ?>
         </div>
     </div>
-    <div class=" col-start-7 col-span-full">
+    <div class=" md:col-start-7 col-start-1 col-span-full">
         <?php if ($image): ?>
             <img src="<?= $image ?>" alt="<?= $title ?>" class="rounded-lg w-full h-full object-cover">
         <?php endif; ?>
     </div>
-    <section class="col-start-3 col-end-11" aria-labelledby="desc">
-        <h2 id="desc" class="text-center">Description du projet</h2>
+    <section class="sm:col-start-3 col-start-1 col-span-full sm:col-end-11" aria-labelledby="desc">
+        <h2 id="desc" class="text-center mx-auto">Description du projet</h2>
         <div class="!text-justify">
             <?= $project_description ?>
         </div>

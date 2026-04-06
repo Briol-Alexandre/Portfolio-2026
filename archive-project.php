@@ -7,7 +7,7 @@ get_header();
 ?>
 <main class="mt-36">
     <h1 class="font-funnel-display text-center">Mes projets</h1>
-    <div class="grid grid-project-cards grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
+    <div class="grid grid-project-cards grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8 max-md:px-5">
         <?php
         if ($projects->have_posts()) {
             while ($projects->have_posts()) {

@@ -1,12 +1,12 @@
 
 .wpcf7 {
-    @apply col-start-8 col-span-4;
+    @apply md:col-start-8 md:col-span-4 sm:col-start-2 sm:col-end-12 col-start-1 col-end-13;
     form {
         @apply flex flex-col gap-6;
     }
 
     .container_contact {
-        @apply flex gap-6;
+        @apply flex max-sm:flex-col gap-6;
         > * {
             @apply flex-1;
         }

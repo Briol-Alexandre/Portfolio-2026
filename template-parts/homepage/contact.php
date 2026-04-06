@@ -7,12 +7,12 @@ $phone = get_field('phone', 'option');
 ?>
 
 <section aria-labelledby="contact" class="main-grid">
-    <div class="col-start-2 col-end-7">
+    <div class="sm:col-start-2 md:col-end-7 sm:col-end-12 col-start-1 col-end-13">
         <h2 id="contact">Me contacter</h2>
-        <p>
+        <p class="text-justify">
             <?= $content ?>
         </p>
-        <div class="grid grid-cols-2 mt-5">
+        <div class="grid sm:grid-cols-2 grid-cols-1 max-sm:justify-center mt-5 max-sm:gap-3">
             <div class="flex flex-col gap-2 font-semibold">
                 <div class="flex items-center gap-2">
                     <span class="bg-primary p-2 rounded flex w-fit">

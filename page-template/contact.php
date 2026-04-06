@@ -11,7 +11,7 @@ $content = get_field('contact_content');
         <p>
             <?= $content ?>
         </p>
-        <div class="flex gap-10 mt-5 justify-center">
+        <div class="flex max-sm:flex-col gap-10 mt-5 justify-center">
             <div class="flex flex-col gap-2 font-semibold">
                 <div class="flex items-center gap-2">
                     <span class="bg-primary p-2 rounded flex w-fit">
