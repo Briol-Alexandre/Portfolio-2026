@@ -20,19 +20,21 @@ $skills = new WP_Query([
     'order' => 'asc',
 ]);
 ?>
-<main class="mt-36">
+<main class="mt-36" itemscope itemtype="https://schema.org/Person">
     <h1 class="font-funnel-display text-center">Qui suis-je ?</h1>
     <section aria-labelledby="alexandre-briol" class="main-grid items-center">
         <div class="md:col-start-1 md:col-end-7 col-span-full flex flex-col gap-8 max-md:row-start-1 max-md:row-end-2">
-            <h2 id="alexandre-briol" class="font-funnel-display mb-0">Je suis <span
-                    class="font-boska italic inline text-secondary">Alexandre Briol</span></h2>
-            <p class="text-justify">Je suis un développeur web passionné, spécialisé dans la création de sites web
+            <h2 id="alexandre-briol" class="font-funnel-display mb-0">Je suis
+                <span class="font-boska italic inline text-secondary" itemprop="name">Alexandre Briol</span>
+            </h2>
+            <p class="text-justify" itemprop="description">Je suis un développeur web passionné, spécialisé dans la
+                création de sites web
                 modernes et fonctionnels. Avec une solide expérience en HTML, CSS, JavaScript et PHP, je m'efforce de
                 créer
                 des expériences utilisateur exceptionnelles. Mon objectif est de transformer les idées en réalité
                 numérique,
                 en utilisant les dernières technologies pour offrir des solutions innovantes et efficaces.</p>
-            <a href="<?= $github_link['url'] ?>" target="_blank" rel="noopener noreferrer"
+            <a href="<?= $github_link['url'] ?>" itemprop="url" target="_blank" rel="noopener noreferrer"
                 class="main-button w-fit group flex gap-2 items-center max-md:ml-auto">
                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24">
                     <path class="fill-bg group-hover:fill-primary transition-all duration-300"
@@ -41,10 +43,11 @@ $skills = new WP_Query([
                 Voir mon GitHub
             </a>
         </div>
-        <img src="<?= $image['url']; ?>" alt="Alexandre Briol"
+        <img src="<?= $image['url']; ?>" alt="Alexandre Briol" itemprop="image"
             class="md:col-start-7 col-span-full max-md:row-start-2 w-full">
     </section>
-    <section aria-labelledby="parcours">
+    <section aria-labelledby="parcours" itemprop="alumniOf" itemscope
+        itemtype="https://schema.org/EducationalOrganization">
         <h2 id="parcours">
             Mon parcours scolaire
         </h2>
@@ -78,7 +81,7 @@ $skills = new WP_Query([
             ?>
         </ul>
     </section>
-    <section aria-labelledby="parcours-pro">
+    <section aria-labelledby="parcours-pro" itemprop="worksFor" itemscope itemtype="https://schema.org/Organization">
         <h2 id="parcours-pro">
             Mon parcours professionnel
         </h2>
@@ -123,7 +126,7 @@ $skills = new WP_Query([
                     $skills->the_post();
                     $range = get_field('test');
                     ?>
-                    <li class="md:px-10 px-2 border-b-2 border-b-primary/20 py-4 last:border-b-0">
+                    <li class="md:px-10 px-2 border-b-2 border-b-primary/20 py-4 last:border-b-0" itemprop="knowsAbout">
                         <p class="font-funnel-display text-2xl font-bold">
                             <?= get_the_title(); ?>
                         </p>
