@@ -14,7 +14,7 @@ $query = new WP_Query([
                 $title = get_the_title();
                 $excerpt = get_the_excerpt();
                 $permalink = get_permalink();
-                $thumbnail = get_the_post_thumbnail_url(get_the_ID(), 'medium');
+                $thumbnail = get_the_post_thumbnail_url(get_the_ID(), 'large');
                 $taxonomies = get_the_terms(get_the_ID(), 'project_technology');
                 ?>
                 <article class="rounded group cursor-pointer project-card last:col-span-full last:max-w-sm last:mx-auto">

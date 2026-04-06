@@ -12,7 +12,7 @@ $gallery = get_field('gallery');
 ?>
 <main class="mt-36 main-grid">
     <div class="col-start-1 md:col-end-6 col-span-full max-md:row-start-2 flex flex-col gap-8">
-        <h1 class="font-funnel-display mb-0">
+        <h1 class="font-funnel-display mb-0 text-left">
             <?= $title; ?>
         </h1>
         <p class="text-justify">
@@ -62,7 +62,8 @@ $gallery = get_field('gallery');
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
             <?php if ($gallery): ?>
                 <?php foreach ($gallery as $image): ?>
-                    <img src="<?= $image['url'] ?>" alt="<?= $image['alt'] ?>" class="rounded-lg w-full h-full object-cover">
+                    <img src="<?= $image['url'] ?>" alt="<?= $image['alt'] ?>"
+                        class="rounded-lg mx-auto object-center object-cover">
                 <?php endforeach; ?>
             <?php endif; ?>
         </div>
